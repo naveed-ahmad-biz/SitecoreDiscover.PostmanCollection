@@ -1,0 +1,1654 @@
+{
+	"info": {
+		"_postman_id": "e876644e-f99e-4089-abe5-89ff87919f42",
+		"name": "Sitecore Discover API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26553293"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Search & Recommendations API",
+					"item": [
+						{
+							"name": "Authentication - Search & Recommendations",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "{{search_api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "scope",
+										"value": "{{scope_search}}",
+										"type": "text"
+									},
+									{
+										"key": "accessExpiry",
+										"value": "{{access_token_expiry}}",
+										"type": "text"
+									},
+									{
+										"key": "refreshExpiry",
+										"value": "{{refresh_token_expiry}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RefreshToken - Search & Recommendations",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{refresh_token_search_rec}}",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Events",
+					"item": [
+						{
+							"name": "Authentication - Events",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "{{event_api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "scope",
+										"value": "{{scope_event}}",
+										"type": "text"
+									},
+									{
+										"key": "accessExpiry",
+										"value": "{{access_token_expiry}}",
+										"type": "text"
+									},
+									{
+										"key": "refreshExpiry",
+										"value": "{{refresh_token_expiry}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RefreshToken - Events",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{refresh_token_events}}",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Feed",
+					"item": [
+						{
+							"name": "Authentication - Feed",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "{{feed_api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "scope",
+										"value": "{{scope_feed}}",
+										"type": "text"
+									},
+									{
+										"key": "accessExpiry",
+										"value": "{{access_token_expiry}}",
+										"type": "text"
+									},
+									{
+										"key": "refreshExpiry",
+										"value": "{{refresh_token_expiry}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RefreshToken - Feed",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{refresh_token_feed}}",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Services",
+					"item": [
+						{
+							"name": "Authentication - Services",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "{{services_api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "scope",
+										"value": "{{scope_services}}",
+										"type": "text"
+									},
+									{
+										"key": "accessExpiry",
+										"value": "{{access_token_expiry}}",
+										"type": "text"
+									},
+									{
+										"key": "refreshExpiry",
+										"value": "{{refresh_token_expiry}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RefreshToken - Services",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{refresh_token_feed}}",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server_api_host}}/account/1/access-token",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"account",
+										"1",
+										"access-token"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Search & Recommendations",
+			"item": [
+				{
+					"name": "Pages",
+					"item": [
+						{
+							"name": "Search Page Results",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token_search_rec}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n       \"context\": {\r\n        \"page\": {\r\n            \"uri\": \"/search\"\r\n        },\r\n        \"user\": {\r\n            \"uuid\": \"123456\"\r\n        }\r\n    },\r\n    \"widget\": {\r\n        \"rfkid\": \"rfkid_7\"\r\n    },\r\n    \"n_item\": 10,\r\n    \"page_number\": 1,\r\n    \"query\": {\r\n        \"keyphrase\": {\r\n            \"value\": [\r\n                \"jacket\"\r\n            ]\r\n        }\r\n    },\r\n    \"suggestion\": {\r\n        \"keyphrase\": {\r\n            \"max\": 3\r\n        }\r\n    },\r\n    \"facet\": {\r\n        \"all\": true\r\n    },\r\n    \"sort\": {\r\n        \"choices\": true\r\n    },\r\n    \"content\": {\r\n        \"product\": {}\r\n    }\r\n    ,\"request_for\":[\"query\"]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"search-rec",
+										"{{customer_key}}",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Preview Search",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token_search_rec}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/\"\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_6\"\r\n        },\r\n        \"query\": {\r\n            \"keyphrase\": {\r\n                \"value\": [\r\n                    \"shirts\"\r\n                ]\r\n            }\r\n        },\r\n        \"suggestion\": {\r\n            \"keyphrase\": {\r\n                \"max\": 3\r\n            },\r\n            \"category\": {\r\n                \"max\": 3\r\n            },\r\n            \"trending_category\": {\r\n                \"max\": 3\r\n            }\r\n        },\r\n        \"facet\": {\r\n            \"all\": true,\r\n            \"sort\": {\r\n                \"value\": [\r\n                    {\r\n                        \"type\": \"count\"\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+									"host": [
+										"{{server_api_host}}"
+									],
+									"path": [
+										"search-rec",
+										"{{customer_key}}",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Widgets",
+					"item": [
+						{
+							"name": "Home Page",
+							"item": [
+								{
+									"name": "[Home Page] Trending Products Widget",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/\"\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_2\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Home Page] Personalized For You",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/\"\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_1\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Home Page] Recently Viewed",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/\"\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_3\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Product Details Page",
+							"item": [
+								{
+									"name": "[Product Details Page] May We Suggest",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/products/100\",\r\n                \"product_group\": [\r\n                    \"100\"\r\n                ],\r\n                \"sku\": [\r\n                    \"100\"\r\n                ]\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_31\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Product Details Page] You May Also Like",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/products/100\",\r\n                \"product_group\": [\r\n                    \"100\"\r\n                ],\r\n                \"sku\": [\r\n                    \"100\"\r\n                ]\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_32\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Product Details Page] Customers Also Purchased",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_search_rec}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"context\": {\r\n            \"page\": {\r\n                \"uri\": \"/products/100\",\r\n                \"product_group\": [\r\n                    \"100\"\r\n                ],\r\n                \"sku\": [\r\n                    \"100\"\r\n                ]\r\n            },\r\n            \"user\": {\r\n                \"uuid\": \"123456\"\r\n            }\r\n        },\r\n        \"widget\": {\r\n            \"rfkid\": \"rfkid_33\"\r\n        },\r\n        \"content\": {\r\n            \"product\": {}\r\n        }\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/search-rec/{{customer_key}}/3",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"search-rec",
+												"{{customer_key}}",
+												"3"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "Funnel Events (Non-Widget)",
+					"item": [
+						{
+							"name": "Track Add To Cart",
+							"item": [
+								{
+									"name": "[Funnel Event] Track Add to Cart - Cart",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 1,\r\n                    \"price\": 35.99                    \r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2c\",\r\n        \"name\": \"cart\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\":\"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Add to Cart - Quick Look",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 1,\r\n                    \"price\": 35.99                    \r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2c\",\r\n        \"name\": \"qview\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\":\"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Add to Cart - Product Details Page",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 1,\r\n                    \"price\": 35.99                    \r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2c\",\r\n        \"name\": \"pdp\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\":\"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track Order",
+							"item": [
+								{
+									"name": "[Funnel Event] Track Order",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"user\": {\r\n                    \"email\": \"abc.def@gmail.com\",\r\n                     \"fbid\": \"facebook_id\",\r\n                      \"eid\": \"hash_of_email\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 99,\r\n                    \"price\": 999.99,\r\n                    \"price_original\": 999.99\r\n                }\r\n            ],\r\n            \"checkout\": {\r\n                \"total\": 999.99,\r\n                \"order_id\": \"1234\",\r\n                \"subtotal\": 999.99\r\n            }\r\n        },\r\n        \"type\": \"order\",\r\n        \"name\": \"confirm\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track Page Events",
+							"item": [
+								{
+									"name": "[Funnel Event] Track Page Events - Home",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"home\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Product",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"pdp\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Order Confirm",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"confirm\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Cart Page",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"cart\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Category Page",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"category\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Search Page",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"search\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Page Events - Other",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"https://www.google.com/\",\r\n                    \"referrer\": \"https://www.google.com/\",\r\n                    \"title\": \"Page Title\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"view\",\r\n        \"name\": \"other\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track Cart Status",
+							"item": [
+								{
+									"name": "[Funnel Event] Track Cart Status",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 99,\r\n                    \"price\": 999.99,\r\n                    \"price_original\": 999.99\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"status\",\r\n        \"name\": \"cart\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track Add to Wishlist",
+							"item": [
+								{
+									"name": "[Funnel Event] Track Add to Wishlist - Product",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 99,\r\n                    \"price\": 999.99,\r\n                    \"price_original\": 999.99\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2w\",\r\n        \"name\": \"pdp\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Add to Wishlist - Cart",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 99,\r\n                    \"price\": 999.99,\r\n                    \"price_original\": 999.99\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2w\",\r\n        \"name\": \"qview\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track Add to Wishlist - Quick Look",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\",\r\n                    \"quantity\": 99,\r\n                    \"price\": 999.99,\r\n                    \"price_original\": 999.99\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"a2w\",\r\n        \"name\": \"pdp\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track User Events",
+							"item": [
+								{
+									"name": "[Funnel Event] Track User Event - Login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"user\": {\r\n                    \"id\": \"4375\",\r\n                    \"email\": \"abc.def@gmail.com\",\r\n                    \"fbid\": \"facebook_id\",\r\n                    \"eid\": \"hash_of_email\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            }\r\n        },\r\n        \"type\": \"user\",\r\n        \"name\": \"login\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Funnel Event] Track User Event - Info",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"user\": {\r\n                    \"id\": \"4375\",\r\n                    \"email\": \"abc.def@gmail.com\",\r\n                    \"fbid\": \"facebook_id\",\r\n                    \"eid\": \"hash_of_email\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            }\r\n        },\r\n        \"type\": \"user\",\r\n        \"name\": \"info\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Widget Events",
+					"item": [
+						{
+							"name": "Track Appear Events",
+							"item": [
+								{
+									"name": "[Widget Event]  - Track Appear - Personalized for You",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_1\",\r\n            \"f\": \"\"\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"appear\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Event]  - Track Appear - Trending Products",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_2\",\r\n            \"f\": \"\"\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"appear\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Event]  - Track Appear - Recently Viewed",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_3\",\r\n            \"f\": \"\"\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"appear\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Track Button Clicks",
+							"item": [
+								{
+									"name": "[Widget Events] - Track A2C Button Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_2\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"a2c\",\r\n            \"click_text\": \"Add to Cart\",\r\n            \"index\": 9999,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Events] - Track Product Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/product/abc\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_31\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"product\",\r\n            \"index\": 9999,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Events] - Track Quick Look Button Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_1\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"view\",\r\n            \"click_text\": \"Quick Look\",\r\n            \"index\": 5,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Events] - Track Shop Now Button Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_3\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"view\",\r\n            \"click_text\": \"Shop Now\",\r\n            \"index\": 5,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Events] - Track View Details Button Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_1\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"view\",\r\n            \"click_text\": \"View Details\",\r\n            \"index\": 5,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "[Widget Events] - Track Add All to Cart Button Click",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token_events}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"data\": {\r\n        \"value\": {\r\n            \"context\": {\r\n                \"page\": {\r\n                    \"uri\": \"/\"\r\n                },\r\n                \"geo\": {\r\n                    \"country\": \"US\"\r\n                },\r\n                \"browser\": {\r\n                    \"user_agent\": \"Mozilla/5.0 (X11; CrOS x86_64 10066.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36\"\r\n                }\r\n            },\r\n            \"rfkid\": \"rfkid_1\",\r\n            \"f\": \"\",\r\n            \"click_type\": \"view\",\r\n            \"click_text\": \"Quick Look\",\r\n            \"index\": 5,\r\n            \"products\": [\r\n                {\r\n                    \"sku\": \"100\"\r\n                }\r\n            ]\r\n        },\r\n        \"type\": \"widget\",\r\n        \"name\": \"click\",\r\n        \"t\": 1625144306397,\r\n        \"t0\": 1625144306397,\r\n        \"uuid\": \"reflektion_uuid\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{server_api_host}}/event/{{customer_key}}/1",
+											"host": [
+												"{{server_api_host}}"
+											],
+											"path": [
+												"event",
+												"{{customer_key}}",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Incremental Feed",
+			"item": [
+				{
+					"name": "[Incremental Events] - Price Updates",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token_feed}}",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n      \"products\": [\r\n            {\r\n                \"sku\": \"A552\",\r\n                \"attributes\": {\r\n                    \"price\": 99.05\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_api_host}}/feed/{{customer_key}}/v1/products/incremental/update",
+							"host": [
+								"{{server_api_host}}"
+							],
+							"path": [
+								"feed",
+								"{{customer_key}}",
+								"v1",
+								"products",
+								"incremental",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
