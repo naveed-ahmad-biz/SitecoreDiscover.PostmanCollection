@@ -12,7 +12,7 @@ A Postman API client collection for API calls related to Sitecore Discover. For 
 The following are the variables in the environment file:
 
 | Variable Name		| Type	| Comments	| Example
-| ------------- 	| ----- | ------------- | -------
+| :------------- 	| :----- | :------------- | :-------
 |customer_key		|string	|The customer key is as per the CEC portal. Copy the value from the CEC portal.	|11111-222333444
 |search_api_key		|string	|Search API Key. You may have one key for all or a separate key for each API end point. Copy the value from the CEC portal.	|01-9c61b…09bc
 |event_api_key		|string	|Event API Key. You may have one key for all or a separate key for each API end point. Copy the value from the CEC portal.	|01-9c61b…09bc
