@@ -2,11 +2,11 @@
 A Postman API client collection for API calls related to Sitecore Discover. For more information, read the blog at 
 
 ## How to use this postman collection
-- Import the two scripts into Postman API client
-- Copy customer key and API keys from Sitecore Discover's CEC portal
-- Generate token using one of the authentication API POST request
-- Copy the access_token in the corresponding variable
-- Make subsequent requests
+- Import the two scripts into Postman API client.
+- Copy customer key and API keys from Sitecore Discover's CEC portal.
+- Generate token using one of the authentication API POST request.
+  - Copy the access_token generated in the previous call in the corresponding variable of the envrionment file.
+- Make subsequent requests from collection.
 
 ## Environment File
 The following are the variables in the environment file:
