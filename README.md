@@ -1,5 +1,5 @@
 # SitecoreDiscover.PostmanCollection
-A Postman API client collection for API calls related to Sitecore Discover. For more information, read the <a href="https://naveed-ahmad.com/2023/08/14/introducing-postman-collection-for-sitecore-discovers-rest-api/" _target="blank">blog</a> 
+A Postman API client collection for API calls related to Sitecore Discover. For more information, read the <a href="https://naveed-ahmad.com/2023/08/14/introducing-postman-collection-for-sitecore-discovers-rest-api/" target="_blank">blog</a> 
 
 ## How to use this postman collection
 - Import the two scripts into Postman API client.
